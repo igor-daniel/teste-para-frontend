@@ -1,0 +1,428 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #3498DB;
+  height: 120px;
+}
+
+header .menu-hamburguer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 90px;
+}
+
+header .logo {
+  display: flex;
+}
+
+header .logo p {
+  margin: auto;
+  color: white;
+  font-size: 18px;
+}
+
+header .icons {
+  display: flex;
+  align-items: center;
+  margin-right: 90px;
+}
+
+header .btn {
+  padding: 10px 15px;
+  margin-left: 20px;
+  background-color: white;
+  display: flex;
+  border-radius: 3px;
+}
+
+header .btn p {
+  margin-left: 3px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #4667a2;
+}
+
+/* Finish header */
+
+main {
+  background-color: #ecf0f1;
+}
+
+.carrosel {
+  background-image: url(slices/desktop/image_rotate.png);
+  width: 1200px;
+  height: 450px;
+  margin: 25px auto;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.carrosel .targ {
+  background-color: #318cc9;
+  width: 290px;
+  height: 30px;
+  margin: 0 0 0 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 15px;
+  text-transform: uppercase;
+}
+
+.carrosel h2 {
+  padding: 30px;
+}
+
+/* finish carrosel */
+.cards-sec {
+  width: 1200px;
+  margin: 20px auto;
+}
+
+.cards-sec h3 {
+  padding: 20px 0;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards .card {
+  width: 360px;
+  height: 210px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.cards .card-top1 {
+  background-image: url(slices/desktop/highlight-01.png);
+
+}
+
+.cards .card-top2 {
+  background-image: url(slices/desktop/highlight-02.png);
+}
+
+.cards .card-top3 {
+  background-image: url(slices/desktop/highlight-03.png);
+}
+
+.cards .card-targ-top {
+  background-color: #d75643;
+  opacity: 0.8;
+  width: 100px;
+  height: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 15px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.cards .card-targ-top p {
+  color: #FFF;
+  font-size: 14px;
+}
+
+/* cards top finish */
+.sec-divolps {
+  width: 1200px;
+  margin: 40px auto;
+}
+
+.cards-aside {
+  display: flex;
+  padding: 20px 0;
+}
+
+.cards-medle {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #d3d3d3;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.cards-medle .card-with-text {
+  width: 360px;
+}
+
+.cards-medle img {
+  max-width: 100%;
+}
+
+.cards-medle .card-title {
+  color: #5999c4;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 8px 0;
+}
+
+.cards-medle .card-text {
+  padding-bottom: 20px;
+}
+
+/* divolps finish */
+
+.content-below {
+  margin: 20px auto;
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-below {
+  margin-bottom: 20px;
+}
+
+.content-below .texts {
+  width: 370px;
+}
+
+.content-below .texts h1 {
+  color: #38adea;
+  margin-bottom: 20px;
+}
+
+.content-below .texts p {
+  font-weight: 700;
+  font-size: 14px;
+  color: #546373;
+}
+
+.content-below .card-below {
+  display: flex;
+  width: 360px;
+}
+
+.content-below .card-below .below-title {
+  color: #e97266;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  display: block;
+  padding: 20px 0 10px 20px;
+}
+
+.content-below .card-below .below-desc {
+  padding: 0 0 0 20px;
+  color: #546373;
+  font-size: 14px;
+}
+
+/* finish */
+footer {
+  background-color: #2c3e50;
+}
+
+footer .targ-footer {
+  background-color: #3498db;
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px 20px;
+  color: #FFF;
+  font-size: 20px;
+}
+
+.logo-text {
+  display: flex;
+  justify-content: space-around;
+  width: 800px;
+  margin: auto;
+  color: #FFF;
+  font-size: 13px;
+  padding: 20px;
+}
+
+.logo-text img {
+  margin-right: 40px;
+}
+
+@media (min-width: 1000px) {
+  .publi-mobal {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .publi {
+    display: none;
+  }
+}
+
+@media(max-width: 850px) {
+  header .menu-hamburguer {
+    margin-left: 30px;
+  }
+
+  header .icons {
+    margin-right: 30px;
+  }
+
+  header .btn {
+    padding: 10px;
+  }
+
+  .btn p {
+    display: none;
+  }
+
+  /* carosel */
+  main .carrosel {
+    width: 720px;
+  }
+
+  .cards-sec {
+    width: 720px;
+  }
+
+  .cards .card-top1 {
+    background-image: url(slices/tablet/highlight-01.png);
+  }
+
+  .cards .card-top2 {
+    background-image: url(slices/tablet/highlight-02.png);
+  }
+
+  .cards .card-top3 {
+    background-image: url(slices/tablet/highlight-03.png);
+  }
+
+  .cards .card {
+    width: 220px;
+    height: 130px;
+  }
+
+  .sec-divolps {
+    width: 720px;
+  }
+
+  .cards-medle .card-with-text {
+    width: 320px;
+  }
+
+  .content-below {
+    width: 720px;
+    flex-wrap: wrap;
+  }
+
+  .content-below .texts {
+    width: 320px;
+  }
+
+  .content-below .card-below {
+    width: 300px;
+  }
+
+  .publi-mobal {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-text {
+    width: 720px;
+  }
+}
+
+@media(max-width: 400px) {
+  header {
+    height: 90px;
+  }
+
+  header .menu-hamburguer {
+    margin-left: 20px;
+  }
+
+  header .logo {
+    width: 180px;
+    height: 80px;
+    margin: 10px 95px 0 0;
+  }
+
+  header .logo p {
+    display: none;
+  }
+
+  header .icons {
+    display: none;
+  }
+
+
+  main .carrosel {
+    background-image: url(slices/mobile/image_rotate.png);
+    width: 340px;
+    height: 200px;
+  }
+
+  .carrosel .targ {
+    width: 210px;
+    margin: 0 0 15px 0;
+  }
+
+  .carrosel h2 {
+    display: none;
+  }
+
+  /* cards */
+  .cards-sec {
+    width: 340px;
+  }
+
+  .cards {
+    flex-wrap: wrap;
+  }
+
+  .cards .card-top1 {
+    background-image: url(slices/mobile/highlight-01.png);
+  }
+
+  .cards .card-top2 {
+    background-image: url(slices/mobile/highlight-02.png);
+  }
+
+  .cards .card-top3 {
+    background-image: url(slices/mobile/highlight-03.png);
+  }
+
+  .cards .card {
+    width: 340px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+
+  .sec-divolps {
+    width: 340px;
+  }
+
+  .content-below {
+    width: 340px;
+  }
+
+  .logo-text {
+    width: 340px;
+  }
+
+  .logo-text img {
+    display: none;
+  }
+}
